@@ -2,13 +2,16 @@ import React, { useState } from 'react'
 import ShoppingList from './ShoppingList';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isDark, setIsDark] = useState(false);
 
   return (
-    <>
-      <h1 className='bg-red-400'>Home</h1>
+    <div className='app'>
+     <header className='flex mx-4 text-green-400 items-center text-3xl'>
+      <h1 className=''>Shopster Shop</h1>
+      <button>Click me</button>
+     </header>
       <ShoppingList/>
-    </>
+    </div>
   )
 }
 
